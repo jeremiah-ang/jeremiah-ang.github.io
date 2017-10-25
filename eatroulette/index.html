@@ -1,18 +1,72 @@
 <html> 
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title> What should I eat? </title>
+
+		<style>
+			* {font-family: sans-serif;}
+			.eat-button {
+				width: 100%; 
+				padding: 30px; 
+				font-size: 32px; 
+				background-color: #6EFFBB; 
+				border: none; 
+				border-radius: 50px;
+				cursor: pointer;
+			}
+
+			.eat-button:hover {
+				opacity: 0.8;
+			}
+
+			.eat-button:focus { outline: 0;}
+			.eat-button:active { background-color: #007D3C; }
+		</style>
 	</head>
 	<body>
-		<div id = 'container'>
+		<div id = 'container' >
+			<center> <h1> What to eat? </h1> </center>
 			<div id = 'query'>
 				<div id = 'input'> 
-					<input id = 'whatToEat' type='input'/> <input id = 'whatToEat-submit' type='submit' />
+					<input id = 'whatToEat' type='input' placeholder="What Choices?" style='width: 100%; height: 100px; font-size: 32px; border-radius: 50px; margin-bottom: 5px; border: black solid 2px; text-align:center;'/> 
+					<input id = 'whatToEat-submit' type='submit' value='Add' class='eat-button'/>
 				</div>
-				<div id = 'record'> </div>
+				<ul id = 'choices' style = "margin-top: 5px; width: 100%; border: black solid 2px; border-radius: 50px; font-size: 32px; padding: 25px 0px; text-align: center; list-style: none">
+					
+				</ul>
+				<input id = "whatToEat-choose" type='submit' value="What to eat?" class = 'eat-button' style='background-color: #E8DF4B;'/>
 			</div>
 
-			<div id = 'answer'>
+			<div id = 'answer' style='width: 100%; text-align: center'>
 			</div>
 		</div>
+
+		<script type = 'text/javascript'>
+			whatToEatChoicesArray = [];
+			window.onload = function () {
+				whatToEatInput = document.getElementById('whatToEat');
+				whatToEatChoices = document.getElementById('choices');
+				addWhatToEat = document.getElementById('whatToEat-submit');
+				answer = document.getElementById('answer');
+				choose = document.getElementById('whatToEat-choose');
+
+				addWhatToEat.addEventListener("click", function (e) {
+					if (whatToEatInput.value.length < 1) return;
+					var whatToEat = document.createElement("li");
+					whatToEat.innerHTML = whatToEatInput.value;
+					whatToEatChoicesArray.push(whatToEatInput.value);
+					whatToEatInput.value = "";
+					whatToEatChoices.appendChild(whatToEat);
+				})
+				choose.addEventListener("click", function (e) {
+					if (whatToEatChoicesArray.length < 1) return;
+					var min = 0, max = whatToEatChoicesArray.length - 1;
+					var i = Math.floor(Math.random() * (max - min + 1)) + min;
+					choose.value = whatToEatChoicesArray[i];
+				})
+
+
+			}
+		</script>
 	</body>
 </html>
