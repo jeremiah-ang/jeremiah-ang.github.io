@@ -22,7 +22,7 @@
 	},
 	{
 		"id" : "eqnsolver", 
-		"dir" : "equationSolver", 
+		"dir" : "EquationSolver", 
 		"title" : "Eqn Solver", 
 		"description" : "20 * (-2 + 3) * 100 = ?",
 		"huge" : true 
