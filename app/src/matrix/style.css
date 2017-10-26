@@ -1,0 +1,147 @@
+* {font-family: Arial; color: #555; }
+body { margin: 0; padding: 0;}
+#page_title { width: 100%; text-align: center; margin-top: 40px;}
+#frame {
+    width: 80%;
+    max-width: 500px;
+    margin: 40px auto 0px auto;
+}
+
+.fill_width {
+    width: 100%;
+}
+
+.main_frame {
+    padding: 20px 6px 20px 3px;
+    margin-bottom: 50px;
+}
+.hidden {
+    display: none;
+}
+
+#input #input_cells #input_cells_table .input_cells_input {
+    display: block;
+    width: 100%;
+}
+#input #input_cells #input_cells_table td {
+    width: 60px;
+}
+#input #input_cells #input_cells_table td input{
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: #AAA solid 1px;
+}
+
+.controls {
+    width: 300px;
+    height: 20px;
+    margin-bottom: 30px;
+}
+.controls:last-of-type {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.controls .input_button {
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 60px;
+    height: 24px;
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 6px;
+}
+.controls .input_button.green{
+    background-color: #45B29D; /* Green */
+    box-shadow: inset 0px -5px #34A18C;
+}
+.controls .input_button.red {
+    background-color: #DF5A49; /* Red */
+    box-shadow: inset 0px -5px #CE4938;
+}
+.controls .input_button:hover {
+    opacity: 0.8;
+}
+.controls #input_controls_left {
+    float: left;
+}
+.controls #input_controls_right {
+    float: right;
+}
+.main_output {
+    text-align: center;
+}
+.output_label {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.output {
+    width: 45%;
+    min-height: 300px;
+    padding: 5px;
+    border: black solid 1px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+
+.step {
+    margin-bottom: 50px;
+}
+.step:last-of-type {
+    margin-bottom: 0px;
+}
+.eros {
+    padding: 0px 4px;
+    font-size: 9pt;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.ero {
+    margin-bottom: 15px;
+}
+.ero span{
+    background-color: #45B29D;
+    padding: 5px 10px;
+    border-radius:10px;
+    color: #FFF;
+}
+.matrixs {
+}
+.matrix {
+    width: 45%;
+    display: inline-block;
+}
+.matrix:nth-child(2){
+    border-left: #AAA solid 2px;
+    margin-left: 4px;
+}
+.matrix_table {
+    table-layout: fixed;
+}
+.matrix_table td {
+    text-align: center;
+    padding: 2px;
+}
+.matrix_table span, #det_output .cell {
+    font-size: 9pt;
+    display: block;
+    padding: 2px;
+    width: 96%;
+    border-radius: 10px;
+    background-color: #F3F3F3;
+}
+
+#det_output {
+    text-align: center;
+}
+#det_output .cell {
+    display:inline-block;
+    font-size: 16px;
+    width: 50px;
+}

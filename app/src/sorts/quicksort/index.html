@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src='../sortAnimatable.js' type='text/javascript'></script>
+<script src='../randomGenerator.js' type='text/javascript'></script>
+<script src='../sortAnimator-bar.js' type='text/javascript'></script>
+<script src='quicksort.js' type='text/javascript'></script>
+
+
+<link href="quicksort.css" rel="stylesheet" type="text/css" />
+<title>Quicksort</title>
+</head>
+<body>
+<div id = 'main'>
+
+	<div id = 'description'>
+
+        	<h1> - Quick Sort -</h1>
+
+            <p>
+            	Divide-and-conquere<br/>
+                Quicksort is an sorting algorithm with worst-case of O(n^2) but an average case of O(n log n).<br />
+                It is a comparision sort and it is not a stable sort.
+
+            </p>
+            <p>
+                The sort is carried out by selecting a pivot among a partition, in which any value smaller than the pivot would be placed in the left and any value bigger would be placed in the right side, the values in the left and right side would by its on become another partition, as it goes on, it eventually reaches multiple partitions of size 1, at that, the sorting is complete.
+            </p>
+
+            <p style='padding-top: 50px'>
+            	<i>
+                	This was a project done during my holiday where I wanted to expand my skills and learn something new, upon learning sorting techniques, I thought it would be more fun and interesting to create an 'animatable' version while creating a deeper understanding of the sorting technique. Hope this would help you in some way or another.
+                </i>
+            </p>
+
+    </div>
+
+	<div id='quicksort-stage' class ='stage'>
+
+    	<div id='quicksort-stage-arrows' class='stage-arrows'>
+
+            <div id='quicksort-compare-arrow' class='compare-arrow arrow'></div>
+
+        	<div id='quicksort-main-arrow' class='main-arrow arrow'></div>
+
+
+        </div>
+
+    	<div id = 'quicksort-stage-bars' class='stage-bars'>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

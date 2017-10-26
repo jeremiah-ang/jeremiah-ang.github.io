@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.main
+{
+	width:600px;
+	height: 600px;
+	max-height: 500px;
+	margin: 0 auto 0 auto;
+
+}
+
+.cell-container
+{
+	float:left;
+	margin: 1px;
+}
+
+.cell
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #fAfAfA;
+	margin: 0 auto 0 auto;
+
+}
+
+.cell.live-red
+{
+	background-color: #DF5A49;
+}
+.cell.live-yellow
+{
+	background-color: #E27A3F;
+}
+.cell.live-green
+{
+	background-color: #45B29D;
+}
+.cell.live-blue
+{
+	background-color: #334D5C;
+}

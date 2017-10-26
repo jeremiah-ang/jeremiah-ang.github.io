@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title> Matrix - WebApp </title>
+    <script src = 'Steps.js' type = 'text/javascript'></script>
+    <script src = 'Rational.js' type = 'text/javascript'></script>
+    <script src = 'Matrix.js' type = 'text/javascript'></script>
+    <script src = 'Matrix_Solver.js' type = 'text/javascript'></script>
+    <script src = 'Matrix_Table.js' type = 'text/javascript'></script>
+    <link href = 'style.css' rel = 'stylesheet' type = 'text/css'>
+    <script>
+        window.onload = function () {
+            //var m = new Matrix();
+            var mt = new Matrix_Solver();
+
+            var b = [[2, 6, 7, 3],[3, 1, 1, -8],[0, 1, 2, 21],[0, 2, 12, 32],[2, 1, 0, 9]];
+            var v = [[5],[-1],[4],[-1]];
+            //var b = [[1,0],[1,1],[1,0]];
+            Matrix.rationalise(b);
+            Matrix.rationalise(v);
+            bv = Matrix.mul(b,v);
+            console.log(Matrix.matrix_toString(bv));
+
+        }
+
+    </script>
+</head>
+<body>
+    <h1 id = 'page_title'> Matrix Calculator </h1>
+    <div id = 'frame'>
+        <div id = 'input' class = 'main_frame fill_width'>
+            <center>
+                <div id = 'input_controls' class = 'controls'>
+                    <div id = 'input_controls_left'>
+                        <div class = 'input_button green' id = 'input_controls_row'>+ Row</div>
+                        <div class = 'input_button green' id = 'input_controls_col'>+ Col</div>
+                    </div>
+                    <div id = 'input_controls_right'>
+                        <div class = 'input_button red' id = 'input_controls_mrow'>- Row</div>
+                        <div class = 'input_button red' id = 'input_controls_mcol'>- Col</div>
+                    </div>
+                </div>
+                <div id = 'input_cells'>
+                    <table id = 'input_cells_table'>
+                    </table>
+                </div>
+                <div id = 'submit_controls' class = 'controls'>
+                    <div class = 'input_button green' id = 'input_controls_submit'>Submit</div>
+                    <div class = 'input_button red' id = 'input_controls_clear'>Clear</div>
+                </div>
+            </center>
+
+
+        </div>
+        <div id = 'main_rref_output' class = 'main_output main_frame fill_width hidden'>
+            <h2 class = 'output_label'> RREF & INVERSE </h2>
+            <div id = 'rref_inv_output'> </div>
+        </div>
+
+        <div id = 'main_adj_output' class = 'main_output main_frame fill_width hidden'>
+            <h2 class = 'output_label'> ADJOINT </h2>
+            <div id = 'adj_output'>
+
+            </div>
+        </div>
+
+        <div id = 'main_det_output' class = 'main_output main_frame fill_width hidden'>
+            <h2 class = 'output_label'> DETERMINANT </h2>
+            <div id = 'det_output'>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

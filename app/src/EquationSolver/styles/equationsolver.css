@@ -1,0 +1,60 @@
+* {
+    font-family: arial;
+    font-size: 30px;
+
+}
+#equation_solver {
+    width: 450px;
+    margin-top: 10px;
+}
+.input {
+    padding: 10px;
+}
+.output:first-of-type {
+    margin-top: 10px;
+}
+.output {
+    background-color: #AAA;
+    box-shadow: inset 0px -5px #999;
+    color: white;
+    width: 380px;
+    text-align: left;
+    padding: 15px;
+    height: 34px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.output:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.output.error:first-of-type {
+    background-color: #DF5A49 ; /* Red */
+    box-shadow: inset 0px -5px #CE4938 ;
+}
+.output.ok:first-of-type {
+    background-color: #45B29D;
+    box-shadow: inset 0px -5px #34A18C;
+}
+.preview {
+    float: right;
+    font-size: 13px;
+    margin-top: 20px;
+    color: #333;
+}
+.smaller {
+    display:inline-block;
+    font-size: 20px;
+    margin-top: 5px;
+}
+#equation_submit {
+    font-size: 12px;
+}
+#disclaimer p{
+    margin-top: 100px;
+    width: 395px;
+    text-align: left;
+    font-size: 12px;
+    font-style: italic;
+    color: #AAA;
+}

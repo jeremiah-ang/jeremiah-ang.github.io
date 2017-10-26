@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name='viewport' content='initial-scale=1' />
+<title>StopCheck</title>
+
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href="promo.css" rel="stylesheet" type="text/css" />
+<link href="promo_mobile.css" rel="stylesheet" type="text/css" />
+<link href="promo_video.css" rel="stylesheet" type="text/css" />
+
+<script src='jquery-3.1.1.min.js' type='text/javascript'></script>
+<script src='promo.js' type='text/javascript'></script>
+<script>
+$(document).ready(init);
+
+function init()
+{
+	$("#content-instruction").PromoPlugin();
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- the video -->
+<div id = 'video'>
+
+	<div id = 'blackOverlay'>
+    </div>
+
+    <div id = 'video-stage'>
+    	<div id = 'video-container'>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- the main division to contain all elements -->
+<div id = 'main'>
+
+	<!-- the main content container -->
+    <div id = 'main-content'>
+
+    	<!-- the start pages -->
+        <div id = 'content-start' class='content-blocks'>
+        	<div id = 'content-page-home-body' class='colored'>
+                <div id = 'content-page-home-container'>
+
+                	<div id = 'content-page-home-left'>
+                        <div id ='header-logo-container' class='content-page-home-panel'>
+                            <div id='header-logo'>
+                                <img src='images/Logo/appicon.png' width='91'/>
+                            </div>
+                            <div id='header-text'>
+                                <img src='images/Logo/appname.png' height='91'/>
+                            </div>
+                        </div>
+
+                        <div id = 'content-page-home-body-text' class='content-page-home-panel'>
+                            <div id = 'content-page-home-body-text-container'>
+                                <p>
+                                    StopCheck is a location-based <br />
+                                    reminder mobile application <br />
+                                    which provides reminder with <br />
+                                    just 3 simple steps!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id = 'content-page-home-body-buttons' class='content-page-home-panel'>
+                            <div id = 'content-page-1-body-buttons-appstore' class='button'>
+                                <img src='images/Home Page/appstore.png' />
+                            </div>
+                            <div id = 'content-page-home-body-buttons-googleplay' class='button'>
+                                <img src='images/Home Page/googleplay.png' />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id = 'content-page-home-body-phones' class='content-page-home-panel'>
+                    	<img src='images/Home Page/phones-playbtn.png' id='body-phone-big'/>
+                        <img src='images/Home Page/phones.png' id='body-phone-small'/>
+                    </div>
+            	</div>
+        	</div>
+        </div>
+
+        <!-- the instructions -->
+        <div id = 'content-instruction' class='content-blocks'>
+
+           	<!-- the instruction container -->
+            <div id = 'instruction-container'>
+
+            	<!-- the instructions -->
+                <div id = 'instruction'>
+
+                	<!-- instruction text -->
+                	<div id = 'instruction-text-container' class='instruction-container'>
+                    	<div id = 'instruction-text'>
+                        	<h1> <img src='images/page 2/pin_icon.png' /> Search or pin location</h1>
+                            <p> Set a location that you want to be notified when entering or leaving </p>
+                            <p> Simply search or tap on the map to drop a pin on the location </p>
+                            <p> When done, the location name and address will be displayed </p>
+                        </div>
+                	</div>
+
+                    <!-- instruction image -->
+                	<div id = 'instruction-image-container' class='instruction-container'>
+
+                        <div id = 'instruction-iphone-image'>
+
+                        	<div id = 'instruction-image'>
+                            	<div id = 'instruction-image-mover'>
+                      				<div class = 'instruction-image-object'><img src='images/page 2/page2gif.gif' /></div>
+                                	<div class = 'instruction-image-object'><img src='images/page 3/page3gif.gif' /></div>
+                                	<div class = 'instruction-image-object'><img src='images/page 4/page4gif.gif' /></div>
+                               	</div>
+                        	</div>
+
+                        </div>
+
+                	</div>
+
+                    <div class = ' instruction-page colored'>
+                        <!-- instruction text -->
+                        <div id = 'instruction-text-container' class='instruction-container'>
+                            <div id = 'instruction-text'>
+                                <h1> <img src='images/page 3/clock_icon.png' /> Set alarm to location</h1>
+                                <p> Write notes and add then to the location</p>
+                                <p> Set alarm to ring on selected days and upon enter or leaving a location </p>
+                            </div>
+                        </div>
+
+                        <!-- instruction image -->
+                        <div id = 'instruction-image-container' class='instruction-container'>
+                            <div id = 'instruction-iphone-image'>
+                                <div id = 'instruction-image'>
+                                    <div id = 'instruction-image-mover'>
+                                        <div class = 'instruction-image-object'><img src='images/page 3/page3gif.gif' /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='instruction-page'>
+                        <!-- instruction text -->
+                        <div id = 'instruction-text-container' class='instruction-container'>
+                            <div id = 'instruction-text'>
+                                <h1><img src='images/page 4/tick_icon.png' />Check when alarm rings</h1>
+                                <p> Stop to check when alarm rings to make sure you did not forget anything when you enter or leave your selected location!</p>
+                                <p> With StopCheck you'll never forget anything again! </p>
+                            </div>
+                        </div>
+
+                        <!-- instruction image -->
+                        <div id = 'instruction-image-container' class='instruction-container'>
+                            <div id = 'instruction-iphone-image'>
+                                <div id = 'instruction-image'>
+                                    <div id = 'instruction-image-mover'>
+                                        <div class = 'instruction-image-object'><img src='images/page 4/page4gif.gif' /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- the instruction backgrounds continer-->
+        <div id = 'instruction-background-container' class='content-blocks'>
+
+            <div class = 'instruction-background '></div>
+            <div class = 'instruction-background '></div>
+            <div class = 'instruction-background '></div>
+
+
+        </div>
+
+        <!-- the instruction backgrounds continer-->
+        <div id = 'instruction-pagination-container' class='content-blocks'>
+
+        	<div id = 'pagination-0' class = 'instruction-pagination active'></div>
+            <div id = 'pagination-1' class = 'instruction-pagination '></div>
+            <div id = 'pagination-2' class = 'instruction-pagination '></div>
+            <div id = 'pagination-3' class = 'instruction-pagination '></div>
+            <div id = 'pagination-4' class = 'instruction-pagination '></div>
+
+
+        </div>
+
+        <!-- the ending pages -->
+        <div id = 'content-video'>
+        	<div id = 'instruction-video'>
+            </div>
+        </div>
+        <!-- the ending pages -->
+        <div id = 'content-end' class='content-blocks colored'>
+        	<div id = 'content-end-container'>
+            	<div id = 'content-end-logo'>
+                	<img src='images/page 5/appicon-lastpage.png' />
+                </div>
+
+                <div id = 'content-end-tagline'>
+                	<p id='content-end-tagline-main'> Always forget? <span class='red'>Never</span> again!</p>
+                    <p> With StopCheck, you will never have to <br/> worry about being forgetful again! </p>
+                </div>
+
+                <div id = 'content-end-buttons'>
+                	<img src='images/page 5/page5_appstore.png' />
+                    <img src='images/page 5/page5_googleplay.png' />
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

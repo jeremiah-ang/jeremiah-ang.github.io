@@ -1,0 +1,392 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (min-width: 960px)
+{
+	*
+	{
+		margin: 0;
+		padding: 0;	
+		
+		font-family: 'Roboto', sans-serif;
+		font-weight: 100;
+		font-size: 22px;
+	}
+	
+	body
+	{
+		height: 100%;	
+	}
+	.colored
+	{
+		background-color: #F3F3F3 !important;	
+	}
+	
+	#main
+	{
+		
+	}
+	
+	#main-content
+	{
+		
+	}
+	
+	.content-blocks
+	{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		
+		color: white;
+		font-size: 50px;
+	}
+	
+	/* 
+		Main content start pages styles 
+	*/
+	#content-start
+	{
+		z-index: 4000;
+		background-color: white;
+		color: black;
+	}
+	
+	/*
+		
+	Page 1/Home Page related styles
+	
+	*/
+	#header-logo-container
+	{
+		width: 480px;
+		height: 115px;
+		margin: 70px auto 0 auto;
+	}
+	#header-logo
+	{
+		float: left;
+	}
+	
+	#header-text
+	{
+		width: 278px;
+		margin-left: 10px;
+		height: 115px;
+		float: left;	
+	}
+	
+	#content-page-home-body
+	{
+		width: 100%;
+		height: 100%;
+		font-size: 16px;
+	}
+	
+	#content-page-home-container
+	{
+		width: 960px;
+		margin: 0 auto 0 auto;	
+	}
+	
+	#content-page-home-left
+	{
+		float: left;
+		margin-left: 32px;	
+	}
+	
+	.content-page-home-panel
+	{
+		float: left;
+		clear: both;
+		margin-left: 5px;
+	}
+	
+	/*
+		Text
+	*/
+	#content-page-home-body-text
+	{
+		z-index: 1;
+		top: 0;
+		text-align: center;
+	}
+	#content-page-home-body-text-container
+	{
+		width: auto;
+		margin-top: 40px;
+		display: inline-block;
+		padding: 5px;
+	}
+	
+	#content-page-home-body-text p
+	{
+		text-align: left;
+		line-height: 1.8em;
+		margin-bottom: 20px;
+	}
+	
+	/*
+		Buttons
+	*/
+	#content-page-home-body-buttons
+	{
+		z-index: 2;
+		top: -100%;
+		
+		text-align: center;
+	}
+	#content-page-home-body-buttons .button
+	{
+		display: inline-block;
+		width: 150px;
+		height: 50px;
+		
+		position: relative;
+		top: 40px;
+	}
+	
+	/*
+		Phones
+	*/
+	#content-page-home-body-phones
+	{
+		float: right;
+		clear: none;
+		margin-top: 50px;
+		margin-right: 40px;
+	}
+	#body-phone-big
+	{
+		cursor: pointer;	
+	}
+	
+	/* 
+		Main content instruction pages styles 
+	*/
+	#content-instruction
+	{
+		z-index: 1000;
+		height: 400%; /* (no. of pages + 1) * 100 */
+		position: fixed;
+	}
+	
+	#instruction-container
+	{
+		width: 100%;
+		height: 25%;
+		position: absolute;
+	}
+	
+	#instruction
+	{
+		width: 960px;
+		height: 100%;
+		position: relative;
+		z-index: 1000;
+		margin: 0 auto 0 auto;
+	}
+	
+	.instruction-container
+	{
+		width:50%;
+		float: left;
+		height: 100%;
+		color: black;
+	}
+	
+	#instruction-text-container
+	{
+		
+	}
+	
+	#instruction-text
+	{
+		width: 100%;
+		position: relative;
+		left: 20px;
+		top: 120px;
+	}
+	#instruction-text h1
+	{
+		color: #D40000;
+		font-weight: 700;
+		font-size: 32px;
+		margin-bottom: 30px;		
+	}
+	#instruction-text p
+	{	
+		font-size: 0.9em;	
+		margin-bottom: 30px;	
+		line-height: 1.2em;
+	}
+	
+	#instruction-image-container
+	{
+		float: right;
+	}
+	
+	#instruction-iphone-image
+	{
+		width: 80%;
+		height: 100%;
+		margin: 0 auto 0 auto;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		background-image: url(images/Home%20Page/plain-iphone.png);
+	}
+	
+	#instruction-image
+	{
+		position: relative;
+		
+		left: 1px;
+		top: 14.5135566188%;
+		
+		margin: 0 auto 0 auto;
+		width: 254px;
+		height: 10px;
+		
+		overflow: hidden;
+	}
+	
+	#instruction-image-mover
+	{
+		width: 100%;
+		height: 400%;
+		overflow: hidden;
+	}
+	
+	.instruction-image-object
+	{
+		width: 100%;
+		float: left;
+		clear: both;
+		
+		overflow: hidden;
+	}
+	
+	.instruction-image-object img
+	{
+		width: 100%;
+	}
+	
+	/* 
+		Main content instruction background styles 
+	*/
+	#instruction-background-container
+	{
+		z-index: 50;
+		top: 100%;
+		height: 300%;
+	}
+	.instruction-background
+	{
+		position: relative;
+		width: 100%;
+		height: 25%;
+		background-color: white;	
+	}
+	
+	/*
+	
+		Main Content insturction pagination styles
+	
+	*/
+	
+	#instruction-pagination-container
+	{
+		z-index: 6500;
+		top: 0;
+		height: 100%;
+		width: 50px;
+		right: 20px;
+		position: fixed;
+		text-align: center;
+	}
+	
+	.instruction-pagination:first-of-type
+	{
+		margin-top: 200px;
+	}
+	
+	.instruction-pagination
+	{
+		width: 6px;
+		height: 6px;
+		margin: 5px;
+		background-color: black;
+		display: inline-block;
+		margin: 10px;
+		cursor: pointer;
+		
+		border-radius: 50% 50%;
+	}	
+	
+	.active
+	{
+		width: 15px;
+		height: 15px;
+		background-color: transparent;	
+		border: black solid 2px;
+	}
+	
+	/*
+		Main content instruction promo video styles
+	*/
+	
+	#content-video
+	{
+		z-index: 3000;
+		top: 400%;
+		display: none;
+	}
+	
+	#instruction-video
+	{
+		width: 720px;
+		height: 405px;
+		
+		margin: 100px auto 0 auto;
+	}
+	
+	/* 
+		Main content end pages styles 
+	*/
+	#content-end
+	{
+		z-index: 4000;
+		top: 400%;
+		background-color: white;
+		color: black;
+	}
+	#content-end-container
+	{
+		width: 960px;
+		margin: 0 auto 0 auto;
+		text-align: center;	
+	}
+	#content-end-container #content-end-logo
+	{
+		margin-top: 70px;
+		margin-bottom: 30px;	
+	}
+	#content-end-container p
+	{
+		font-size: 24px;	
+		margin-bottom: 40px;
+	}
+	p#content-end-tagline-main
+	{
+		font-size: 32px!important;
+		font-weight: 400;	
+	}
+	#content-end .red
+	{
+		font-size: 32px!important;
+		color: red;
+		font-weight: 400;
+	}	
+}
+

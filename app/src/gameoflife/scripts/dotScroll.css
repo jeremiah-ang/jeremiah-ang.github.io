@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* CSS Document */
+body
+{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+#loading
+{
+	position: absolute;
+	z-index: 4000;
+	width: 100%;
+	height: 100%;
+	background-color: #ff7474;
+	visibility: visible;
+}
+
+	#loading p
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 20px;
+		text-align: center;
+		margin-top: 250px;
+		color: white;
+	}
+
+#main
+{
+	width: 500px;
+	height: 400px;
+	margin: 0 auto 0 auto;
+	padding-top: 100px;
+}
+
+	#dot-container
+	{
+		width: 100px;
+		height: 100px;
+		margin: 0 auto 0 auto;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.dot
+	{
+		border-radius: 50%;
+		margin: 1px;
+		float: left;
+	}
+
+		.dot.active
+		{
+			background-color: #ff7474;
+		}
+		.dot.active-red
+		{
+			background-color: #DF5A49;
+		}
+		.dot.active-yellow
+		{
+			background-color: #E27A3F;
+		}
+		.dot.active-green
+		{
+			background-color: #45B29D;
+		}
+		.dot.active-blue
+		{
+			background-color: #334D5C;
+		}
+
+	#controls
+	{
+		text-align: center;
+		width: 380px;
+		margin: 50px auto 0 auto;
+	}
+
+		#controls .css-button
+		{
+			float: left;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+
+
+
+.css-button
+{
+	width: 150px;
+	height: 30px;
+	padding: 15px 5px 5px 5px;
+	text-align: center;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+
+	background-color: rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 5px rgba(0, 0, 0, 0.35);
+	-webkit-transition: background-color 0.2, box-shadow 0.2;
+	transition: background-color 0.2, box-shadow 0.2;
+
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	color: rgba(255, 255, 255, 1);
+
+	cursor: pointer;
+
+	margin: 10px;
+}
+
+.css-button.control-red
+{
+	background-color: #DF5A49;
+	box-shadow: 0px 5px #CE4938;
+	-webkit-transition: background-color 0.2s, box-shadow 0.2s;
+	transition: background-color 0.2s, box-shadow 0.2s;
+}
+.css-button.control-green
+{
+	background-color: #45B29D;
+	box-shadow: 0px 5px #34A18C;
+	-webkit-transition: background-color 0.2s, box-shadow 0.2s;
+	transition: background-color 0.2s, box-shadow 0.2s;
+}
+.css-button.control-blue
+{
+	background-color: #334D5C;
+	box-shadow: 0px 5px #223C4B;
+	-webkit-transition: background-color 0.2s, box-shadow 0.2s;
+	transition: background-color 0.2s, box-shadow 0.2s;
+}
+.css-button.control-yellow
+{
+	background-color: #E27A3F;
+	box-shadow: 0px 5px #D1692E;
+	-webkit-transition: background-color 0.2s, box-shadow 0.2s;
+	transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.css-button:hover
+{
+	margin-top: 12px;
+}
+
+.css-button:active
+{
+	margin-top: 15px;
+	box-shadow: none;
+}
+
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid white;
+}
+
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right:10px solid white;
+}
+
+.circle-button
+{
+	width: 21px !important;
+	height: 25px !important;
+	padding: 15px 10px 10px 19px !important;
+	border-radius: 50% !important;
+}

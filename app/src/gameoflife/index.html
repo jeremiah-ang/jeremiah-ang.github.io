@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Game Of Life</title>
+<link href="scripts/dotScroll.css" rel="stylesheet" type="text/css" />
+<script src='scripts/import.js' type='text/javascript'></script>
+<script src='scripts/controls.js' type='text/javascript'></script>
+<script>
+
+	window.onload = function()
+	{
+		$import("scripts/dotScroll.js");	
+	}
+
+</script>
+</head>
+
+<body>
+
+	<div id = 'loading'>
+    
+    	<p> Loading . . . </p>
+        
+    </div>
+
+	<div id = 'main'>
+    
+        <div id = 'dot-container'>
+        </div>
+        
+        <div id = 'controls'>
+    		
+    		<div id='control-left' class = 'css-button circle-button control-red'><div class='arrow-left'></div></div>
+            <div id='control-main' class = 'css-button control-red'>Glider</div>
+    		<div id='control-right' class = 'css-button circle-button control-red'><div class='arrow-right'></div></div>
+        
+        </div>
+        
+    </div>
+
+</body>
+</html>
