@@ -55,7 +55,7 @@ SortBarAnimator.prototype.buildBars = function(array, max_value)
 	{
 		var bar_value = array[i];
 		var bar_width = (bar_value / max_value) * STAGE_WIDTH;
-		var bar = Bar(i, bar_width, bar_height, MARGIN, CLASSNAME);
+		var bar = Bar(i, bar_width, bar_height, MARGIN, CLASSNAME, (bar_value / max_value));
 		bar.innerHTML = "<p>"+bar_value+"<p>";
 
 		this.bars.push(bar);
@@ -87,7 +87,7 @@ SortBarAnimator.prototype.swapBar = function(bigger, smaller)
 }
 
 
-function Bar(i, width, height, margin, className)
+function Bar(i, width, height, margin, className, opacity=1)
 {
 	var div = document.createElement("div");
 	div.className = className;
@@ -95,5 +95,8 @@ function Bar(i, width, height, margin, className)
 	div.style.width = width+"px";
 	div.style.height = height+"px";
 	div.style.top = 50+i*(height + margin)+"px";
+	console.log(opacity)
+	div.style.backgroundColor = "rgba(206,73,56," + opacity + ")"
+	div.style.borderRadius = "20px"
 	return div;
 }
