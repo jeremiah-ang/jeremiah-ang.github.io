@@ -1,5 +1,12 @@
 [
 	{
+		"id" : "automatedformfiller", 
+		"dir" : "automatedformfiller", 
+		"title" : "Selenium", 
+		"description" : "Auto Form Filling with Multithreading",
+		"huge" : false 
+	},
+	{
 		"id" : "perspective", 
 		"dir" : "perspective", 
 		"title" : "Perspective", 
@@ -21,6 +28,13 @@
 		"huge" : false 
 	},
 	{
+		"id" : "mergesort", 
+		"dir" : "sorts/mergesort", 
+		"title" : "Mergesort", 
+		"description" : "Animated Mergesort",
+		"huge" : false 
+	},
+	{
 		"id" : "eqnsolver", 
 		"dir" : "EquationSolver", 
 		"title" : "Eqn Solver", 
@@ -39,13 +53,6 @@
 		"dir" : "sorts/bubblesort", 
 		"title" : "Bubblesort", 
 		"description" : "Animated Bubblesort",
-		"huge" : false 
-	},
-	{
-		"id" : "mergesort", 
-		"dir" : "sorts/mergesort", 
-		"title" : "Mergesort", 
-		"description" : "Animated Mergesort",
 		"huge" : false 
 	},
 	{
