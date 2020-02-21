@@ -1,10 +1,24 @@
 [
 	{
+		"id" : "gitvisualiser", 
+		"dir" : "gitvisualiser", 
+		"title" : "Git", 
+		"description" : "Visualisation of basic git operations",
+		"huge" : true 
+	},
+	{
 		"id" : "automatedformfiller", 
 		"dir" : "automatedformfiller", 
 		"title" : "Selenium", 
 		"description" : "Auto Form Filling with Multithreading",
 		"huge" : false 
+	},
+	{
+		"id" : "isometric", 
+		"dir" : "isometric", 
+		"title" : "Isometric", 
+		"description" : "Interactive Isometric grid",
+		"huge" : false
 	},
 	{
 		"id" : "perspective", 
@@ -14,11 +28,11 @@
 		"huge" : true 
 	},
 	{
-		"id" : "isometric", 
-		"dir" : "isometric", 
-		"title" : "Isometric", 
-		"description" : "Interactive Isometric grid",
-		"huge" : false
+		"id" : "eqnsolver", 
+		"dir" : "EquationSolver", 
+		"title" : "Eqn Solver", 
+		"description" : "20 * (-2 + 3) * 100 = ?",
+		"huge" : true 
 	},
 	{
 		"id" : "matrix", 
@@ -33,13 +47,6 @@
 		"title" : "Mergesort", 
 		"description" : "Animated Mergesort",
 		"huge" : false 
-	},
-	{
-		"id" : "eqnsolver", 
-		"dir" : "EquationSolver", 
-		"title" : "Eqn Solver", 
-		"description" : "20 * (-2 + 3) * 100 = ?",
-		"huge" : true 
 	},
 	{
 		"id" : "quicksort", 
